@@ -1,0 +1,119 @@
+
+/* Basic Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f6fc;
+    color: #222;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #102b50;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+}
+
+nav a:hover {
+    color: #48dce5;
+}
+
+/* Home Section */
+.home {
+    background-color: #163b68;
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.home h1 {
+    font-size: 36px;
+}
+
+.home h3 {
+    color: #48dce5;
+}
+
+.button {
+    display: inline-block;
+    background-color: #48dce5;
+    color: #102b50;
+    padding: 12px 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Content Sections */
+section:not(.home) {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 85%;
+    max-width: 900px;
+    border-radius: 8px;
+    border: 1px solid #d5e1ef;
+}
+
+section h2 {
+    color: #163b68;
+    border-bottom: 2px solid #48dce5;
+    padding-bottom: 8px;
+}
+
+/* Skills List */
+li {
+    margin: 10px 0;
+}
+
+/* Links */
+a {
+    color: #1675b9;
+}
+
+.button {
+    color: #102b50;
+}
+
+/* Footer */
+footer {
+    background-color: #102b50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+
+    .home h1 {
+        font-size: 28px;
+    }
+
+    section:not(.home) {
+        width: 85%;
+    }
+}
